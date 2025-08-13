@@ -88,44 +88,18 @@ img {
   }
 }
 
-// .logo
-.logo {
-  margin-top: 69px;
-  margin-bottom: 56px;
-  .image {
-    display: block;
-    width: 368px;
-  }
+// .mainvisual
+.mainvisual {
+  padding: 138px 0 0;
 
-  @media screen and (max-width: 1200px) {
-    margin-top: vw_pc(69);
-    margin-bottom: vw_pc(57);
-    .image {
-      width: vw_pc(368);
-    }
-  }
-
-  @media screen and (max-width: 750px) {
-    margin-top: vw_sp(74);
-    margin-bottom: vw_sp(53);
-    .image {
-      width: vw_sp(460);
-      margin: 0 auto;
-    }
-  }
-}
-
-// .video
-.video {
-  &_inner {
+  &__container {
+    position: relative;
     max-width: 1200px;
-    width: 100%;
     margin: 0 auto;
   }
 
   @media screen and (max-width: 1200px) {
-    padding-left: vw_pc(20);
-    padding-right: vw_pc(20);
+    padding: vw_pc(138) vw_pc(20) 0;
   }
 
   @media screen and (max-width: 750px) {
@@ -554,6 +528,7 @@ img {
 }
 
 .tab_btn {
+  font-family: 'Segoe UI', SegoeUI, 'Yu Gothic UI', 'Meiryo UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   flex: 1;
   height: 75px;
   padding: 10px;
@@ -646,10 +621,12 @@ img {
 
     @media screen and (max-width: 1200px) {
       width: vw_pc(604);
+      border-width: vw_pc(9);
     }
 
     @media screen and (max-width: 750px) {
       width: 100%;
+      border-width: vw_sp(9);
     }
   }
   .content {
@@ -984,17 +961,20 @@ img {
 .wrapper-wide {
   background-color: #f2f2f2;
   text-align: center;
-  padding: 20px 0 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-top: 195px;
 
   @media screen and (max-width: 1200px) {
     margin-top: vw_pc(195);
-    padding: vw_pc(20) 0 vw_pc(10);
+    padding-top: vw_pc(20);
+    padding-bottom: vw_pc(20);
   }
 
   @media screen and (max-width: 750px) {
     margin-top: vw_sp(184);
-    padding: vw_sp(20) 0 vw_sp(10);
+    padding-top: vw_sp(20);
+    padding-bottom: vw_sp(20);
   }
 }
 
@@ -1050,7 +1030,7 @@ img {
 .wrapper-wide .notes-head::after {
   content: '';
   position: absolute;
-  top: 29%;
+  top: 46%;
   right: 17px;
   width: 20px;
   height: 20px;
@@ -1071,10 +1051,10 @@ img {
 }
 
 .wrapper-wide .notes-body-inr {
-  padding: 25px 0 138px;
+  padding: 20px 0 138px;
 
   @media screen and (max-width: 1200px) {
-    padding: vw_pc(25) 0 vw_pc(138);
+    padding: vw_pc(20) 0 vw_pc(138);
   }
 }
 
@@ -1108,7 +1088,7 @@ img {
   .wrapper-wide .notes-head::after {
     content: '';
     position: absolute;
-    top: calc(50% - vw_sp(2));
+    top: 59%;
     right: vw_sp(4);
     width: vw_sp(32);
     height: vw_sp(32);
@@ -1119,7 +1099,7 @@ img {
 
   .wrapper-wide .notes.is-closed .notes-head::after {
     transform: translateY(-55%) rotate(45deg);
-    top: 50%;
+    top: 44%;
   }
 
   .wrapper-wide .notes-body-inr {
@@ -1132,34 +1112,15 @@ img {
 // .u-txt12
 .u-txt12 {
   font-size: 12px;
-  line-height: 1.1;
+  line-height: 1.67;
   font-weight: 400;
   color: #000;
 
-  .star {
-    display: inline-block;
-  }
-  .dot {
-    display: inline-block;
-    line-height: 1;
-    font-size: 20px;
-    position: relative;
-    top: 3px;
-    margin-right: 3px;
-  }
-
   @media screen and (max-width: 1200px) {
     font-size: vw_pc(12);
-    .dot {
-      font-size: vw_pc(20);
-    }
   }
 
   @media screen and (max-width: 750px) {
     font-size: vw_sp(16);
-    line-height: 1.2;
-    .dot {
-      font-size: vw_sp(28);
-    }
   }
 }

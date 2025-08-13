@@ -15,17 +15,12 @@
 <body>
   <main>
     <div class="wrapper">
-      <div class="logo">
-        <div class="l-container container">
-          <a href="#" class="image">
-            <img class="c_img_cover" src="images/logo.svg" alt="Windows11 intel">
-          </a>
-        </div>
-      </div>
-
-      <div class="video">
-        <div class="video_inner">
-          <img class="c_img_cover" src="images/video.jpg" alt="">
+      <div class="mainvisual">
+        <div class="mainvisual__container">
+          <picture>
+            <source media="(max-width: 750px)" srcset="mv_img.jpg" width="750" height="918">
+            <img class="c_img_cover" src="images/mv_img.jpg" alt="インテル、はいってる Windows 11 PCで、 毎日がハイパフォーマンスになる。" loading="eager" width="1200" height="530">
+          </picture>
         </div>
       </div>
 
@@ -135,7 +130,7 @@
           <div class="tab_content active" id="performance">
             <div class="box_movie">
               <div class="movie">
-                <img class="c_img_cover" src="/images/movie_tab_01.png" alt="一日中いつでも、どこでも、快適に使える" width="1171" height="659" loading="lazy">
+                <img class="c_img_cover" src="/images/movie_tab_01.jpg" alt="一日中いつでも、どこでも、快適に使える" width="1169" height="657" loading="lazy">
               </div>
               <div class="content">
                 <h3 class="head">一日中いつでも、<br>どこでも、快適に使える</h3>
@@ -150,7 +145,7 @@
           <div class="tab_content" id="security">
             <div class="box_movie">
               <div class="movie">
-                <img class="c_img_cover" src="/images/movie_tab_01.png" alt="セキュリティへの心配がいらないから、安心して使い続けられる" width="1171" height="659" loading="lazy">
+                <img class="c_img_cover" src="/images/movie_tab_01.jpg" alt="セキュリティへの心配がいらないから、安心して使い続けられる" width="1169" height="657" loading="lazy">
               </div>
               <div class="content">
                 <h3 class="head">セキュリティへの心配がいらないから、<br>安心して使い続けられる</h3>
@@ -165,7 +160,7 @@
           <div class="tab_content" id="ai">
             <div class="box_movie">
               <div class="movie">
-                <img class="c_img_cover" src="/images/movie_tab_01.png" alt="困っていることがあっても、サポートしてくれる存在がいつも一緒" width="1171" height="659" loading="lazy">
+                <img class="c_img_cover" src="/images/movie_tab_01.jpg" alt="困っていることがあっても、サポートしてくれる存在がいつも一緒" width="1169" height="657" loading="lazy">
               </div>
               <div class="content">
                 <h3 class="head">困っていることがあっても、<br>サポートしてくれる存在がいつも一緒</h3>
@@ -266,10 +261,10 @@
 
         <div class="banner">
           <a href="#" class="link">
-            <img src="images/banner_img_01.jpg" class="c_img_cover" alt="Windows 11 で、毎日が楽しみになる" width="1200" height="529" loading="lazy">
+            <img src="images/banner_img_01.jpg" class="c_img_cover" alt="Windows 11 で、毎日が楽しみになる" width="1200" height="528" loading="lazy">
           </a>
           <a href="#" class="link">
-            <img src="images/banner_img_02.jpg" class="c_img_cover" alt="さらに速く、知性を備えたWindows PC" width="1200" height="529" loading="lazy">
+            <img src="images/banner_img_02.jpg" class="c_img_cover" alt="さらに速く、知性を備えたWindows PC" width="1200" height="527" loading="lazy">
           </a>
         </div>
       </div>
@@ -283,15 +278,15 @@
         <div class="notes-body js-accordion__body">
           <div class="notes-body-inr">
             <ul class="u-txt12">
-              <li><span class="star">※</span>Windows Hello のご利用可否については、ハードウェアに依存します。</li>
-              <li><span class="dot">●</span>AI 機能の使用に、最低年齢制限が適用される場合があります。</li>
-              <li><span class="dot">●</span>新機能を含む Windows アップデートの配信タイミングは、ご利用のデバイスによって異なる場合があります。</li>
-              <li><span class="dot">●</span>これらの機能のご利用には、マイクロソフト アカウントが必要です。</li>
-              <li><span class="dot">●</span>一部の機能やサービスのご利用については、インターネット接続が必要です (通信に関する費用はお客様のご負担になります)。</li>
-              <li><span class="dot">●</span>記載されている会社名および、製品名は、各社の商標または登録商標です。</li>
-              <li><span class="dot">●</span>記載されている情報は、2025 年 7 月現在のものです。</li>
-              <li><span class="dot">●</span>掲載している画像はイメージです。</li>
-              <li><span class="dot">●</span>製品の仕様は、予告なく変更する場合があります。あらかじめご了承ください。</li>
+              <li>※ Windows Hello のご利用可否については、ハードウェアに依存します。</li>
+              <li>● AI 機能の使用に、最低年齢制限が適用される場合があります。</li>
+              <li>● 新機能を含む Windows アップデートの配信タイミングは、ご利用のデバイスによって異なる場合があります。</li>
+              <li>● これらの機能のご利用には、マイクロソフト アカウントが必要です。</li>
+              <li>● 一部の機能やサービスのご利用については、インターネット接続が必要です (通信に関する費用はお客様のご負担になります)。</li>
+              <li>● 記載されている会社名および、製品名は、各社の商標または登録商標です。</li>
+              <li>● 記載されている情報は、2025 年 7 月現在のものです。</li>
+              <li>● 掲載している画像はイメージです。</li>
+              <li>● 製品の仕様は、予告なく変更する場合があります。あらかじめご了承ください。</li>
             </ul>
           </div>
         </div>
