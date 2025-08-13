@@ -122,7 +122,7 @@ img {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    background-image: url('/images/recommend_bg.jpg');
+    background-image: url('../images/recommend_bg.jpg');
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -140,7 +140,7 @@ img {
     }
 
     @media screen and (max-width: 750px) {
-      background-image: url('/images/recommend_bg_sp.jpg');
+      background-image: url('../images/recommend_bg_sp.jpg');
       flex-direction: column;
       gap: vw_sp(50);
       padding: vw_sp(65) vw_sp(49) vw_sp(51);
