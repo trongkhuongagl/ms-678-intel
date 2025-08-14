@@ -505,19 +505,17 @@ img {
     font-weight: 700;
     line-height: calc(56/40);
     text-align: center;
-    margin-left: -64px;
     margin-bottom: 44px;
 
     @media screen and (max-width: 1200px) {
       font-size: vw_pc(40);
-      margin-left: vw_pc(-64);
       margin-bottom: vw_pc(44);
     }
 
     @media screen and (max-width: 750px) {
       font-size: vw_sp(40);
-      margin-left: vw_sp(-3);
       margin-bottom: vw_sp(53);
+      letter-spacing: -0.02em;
     }
   }
 }
@@ -565,19 +563,6 @@ img {
 .tab_btn.active {
   background-color: #001968;
   color: #fff;
-}
-
-.tab_btn_performance,
-.tab_btn_security {
-  letter-spacing: -5px;
-
-  @media screen and (max-width: 1200px) {
-    letter-spacing: vw_pc(-5);
-  }
-
-  @media screen and (max-width: 750px) {
-    letter-spacing: vw_sp(-5);
-  }
 }
 
 .tab_content {
