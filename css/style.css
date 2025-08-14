@@ -545,6 +545,7 @@ img {
     font-size: 5.3333333333vw;
     margin-bottom: 7.0666666667vw;
     letter-spacing: -0.02em;
+    white-space: nowrap;
   }
 }
 
